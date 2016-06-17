@@ -1,0 +1,15 @@
+{
+  "name": "Kayako TID Linker",
+  "version": "0.93",
+  "background_page": "background.html",
+  "permissions": [
+    "tabs", "https://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "js": ["kayako_tid_linker.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
